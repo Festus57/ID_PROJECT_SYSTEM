@@ -1,0 +1,313 @@
+html{
+    scroll-behavior: smooth;
+}
+body {
+    padding: 0px;
+    margin: 0px;
+    background-image: url(IMG/id3.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+/* THIS IS HEADER STYLE*/
+.header {
+    background-color: rgb(46, 28, 243);
+    box-shadow: 5px 5px 20px black;
+    color:white;
+    width: 100%;
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.heads {
+    margin-left: 20px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.heads img {
+    height: 6vh;
+    width: 4vw;
+    border-radius: 2px;
+}
+#images{
+    height: 6vh;
+    width: 4vw;
+    margin-right: 10px;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    margin-right: 20px;
+}
+
+.links img {
+    height: 5vh;
+    width: 3vw;
+    cursor: pointer;
+}
+
+.links a {
+    text-decoration: none;
+    color: white;
+    font-size: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.links a:hover {
+    text-decoration: none;
+    text-decoration: underline;
+    color:whhite;
+    font-size: 17px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+#main-content{
+    background-image: url(IMG/back.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display:flex; 
+    justify-content:center;
+    opacity: 0.2;
+}
+
+/*ADMIN PAGE*/
+#link a{
+    display: flex;
+    text-decoration: none;
+
+}
+.links-menu{
+    float: right;
+    position: absolute;
+    background-color: blue;
+}
+.links-menu a{
+    display: flex;
+    text-decoration: none;
+    justify-content: end;
+    color: white;
+    padding: 10px;
+
+}
+.menu{
+    display: none;
+}
+
+/*THIS IS THE STYLE IN INDEX.php*/
+
+.container2 img {
+    height: 10vh;
+    width: 9vw;
+    border-radius: 5px;
+}
+
+.container2 button {
+    padding: 4px 17px;
+    margin-left: 5px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.container1 img {
+    padding-top: 5px;
+    height: 10vh;
+    width: 12vw;
+    border-radius: 8px;
+}
+
+.introduction {
+    background-image: url(id5.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: rgb(253, 248, 248);
+    font-weight: bold;
+    text-align: center;
+
+}
+
+.all {
+    text-align: center;
+    background-color: white;
+
+}
+.home_image img {
+    height: 25vh;
+    width: 20vw;
+    object-fit: cover;
+}
+.howit-image img{
+    height: 25vh;
+    width: 20vw;
+    object-fit: cover;
+}
+#home-image{
+    height: 35vh;
+    width: 19vw;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+.div-foorter {
+    color: black;
+    background-color: white;
+    opacity: 0.9;
+    display: flex;  
+    justify-content: center;
+}
+
+.div-inserid {
+    text-align: center;
+}
+.admin-mun{
+    display: none;
+}
+.admin-sidebar a{
+  margin: 5px;
+  font-size: 10px;
+}
+.admin-sidebar {
+  position: absolute;
+  top: 25vh;
+  display: flex;
+  display: none;
+}
+.systemwork{
+    display: flex;  
+    justify-content: center;
+}
+
+
+/*THIS IS THE STYLE FOR LOGIN.HRML*/
+
+/*THIS IS THE STYLE OF SIGN UP.php*/
+
+/*ON HOW IT WORK PAGE*/
+.howit{
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*ON REGISTRATION PAGE*/
+#regist{
+    background-color: white;
+}
+.form-text{
+    padding: 20px;
+}
+
+footer{
+    text-align: center;
+    background-color: rgb(75, 75, 212);
+    color: white;
+    font-size: 17px;
+    padding: 7px;
+}
+
+/*//MEDIA QUERRY OF INDEX.php*/
+@media (max-width:768px) {
+
+    .all_descation{
+        font-size: 14px;
+        
+    }
+
+    .all_descation h4{
+        font-size: 20px;
+    }
+    .howit-image img{
+      width: 80vw;
+      height: 30vh;
+    }
+    .links a{
+        display: none;
+    }
+    #images{
+        margin-right: 0px;
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;
+    }
+    .menu{
+        display: block;
+    }
+    .links-menu{
+     opacity: 0.5;
+    }
+     .heads{
+        padding:0px;
+        margin: 0px;    
+        
+     }
+    .heads img{
+        width: 50px;
+        height: 50px;
+        border-radius: 5px;
+    }
+    .div-foorter{
+        display: flex;
+        flex-direction: column; /* stack images */
+        align-items: center;
+    }
+    .foorter-part{
+        display: flex;
+        flex-direction: column; /* stack images */
+        align-items: center;
+        gap: 40px;
+
+    }
+    .systemwork{
+        display: flex;
+        flex-direction: column; /* stack images */
+        align-items: center;
+    }
+    .div-foorter img{
+         width: 80vw;
+         height: 15vh;
+    }
+    .admin-mun{
+    display: block;
+}
+    .home_image img {
+        height: 15vh; 
+        width: 80vw;  
+        margin-bottom: 10px;
+    }
+
+    .home_image {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+    }
+    #home-image{
+    height: 36vh;
+    width: 70vw;
+    object-fit: cover;
+    border-radius: 100%;
+}
+    .admin-sidepart{
+    display: none;
+}
+    .container-table{
+    font-size: 10px;
+}
+    .container-table a{
+    font-size: 10px;
+    margin: 5px;
+}
+
+
+}
+
